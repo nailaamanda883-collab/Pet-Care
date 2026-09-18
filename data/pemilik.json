@@ -1,0 +1,26 @@
+[
+    {
+        "id_pemilik": "P001",
+        "nama": "Siti Aminah",
+        "alamat": "Malang",
+        "no_hp": "081234567801"
+    },
+    {
+        "id_pemilik": "P002",
+        "nama": "Budi Santoso",
+        "alamat": "Batu",
+        "no_hp": "081234567802"
+    },
+    {
+        "id_pemilik": "P003",
+        "nama": "Dewi Lestari",
+        "alamat": "Malang",
+        "no_hp": "081234567803"
+    },
+    {
+        "id_pemilik": "P004",
+        "nama": "Rizky Firmansyah",
+        "alamat": "Lawang",
+        "no_hp": "081234567804"
+    }
+]
