@@ -1,0 +1,849 @@
+/* ==================================================
+   🐾 PETCARE × NAILONG 💛💜
+   Jobsheet 6 - Fetch API & JSON
+   ================================================== */
+
+
+/* ===== RESET ===== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ===== BODY ===== */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    color: #665d6b;
+
+    background-color: #fffdf5;
+
+    line-height: 1.6;
+}
+
+
+/* ===== LINKS ===== */
+
+a {
+    color: #8064a2;
+
+    text-decoration: none;
+}
+
+a:hover {
+    color: #684d89;
+
+    text-decoration: none;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+header {
+    background-color: #ffd95a;
+
+    color: #705b36;
+
+    padding: 1rem 1.5rem;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    box-shadow:
+        0 4px 12px rgba(224, 184, 64, 0.20);
+
+    border-bottom:
+        4px solid #c8b6e8;
+}
+
+
+/* ===== Logo ===== */
+
+header h1 {
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+header h1::before {
+    content: "🐾 ";
+}
+
+
+/* ===== Navbar ===== */
+
+header nav ul {
+    list-style: none;
+
+    display: flex;
+
+    gap: 1rem;
+}
+
+header nav a {
+    color: #705b36;
+
+    font-weight: 600;
+
+    padding: 0.45rem 0.7rem;
+
+    border-radius: 12px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+header nav a:hover {
+    background-color: #fff1a8;
+
+    color: #8064a2;
+}
+
+
+/* ==================================================
+   HAMBURGER
+   ================================================== */
+
+.nav-toggle-label {
+    display: none;
+
+    font-size: 1.7rem;
+
+    color: #705b36;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+/* ==================================================
+   MAIN
+   ================================================== */
+
+main {
+    max-width: 1000px;
+
+    margin: 2rem auto;
+
+    padding: 0 1.5rem;
+}
+
+
+/* ==================================================
+   SECTION / CARD
+   ================================================== */
+
+section {
+    background-color: #ffffff;
+
+    border-radius: 22px;
+
+    padding: 1.5rem;
+
+    margin-bottom: 1.5rem;
+
+    border:
+        2px solid #eee7fa;
+
+    box-shadow:
+        0 6px 18px rgba(128, 100, 162, 0.08);
+
+    position: relative;
+}
+
+
+/* Cute decoration */
+
+section::after {
+    content: "💜";
+
+    position: absolute;
+
+    right: 20px;
+
+    top: 12px;
+
+    font-size: 1.2rem;
+}
+
+
+/* ===== Heading ===== */
+
+section h2 {
+    margin-bottom: 1rem;
+
+    color: #8064a2;
+
+    font-size: 1.35rem;
+}
+
+section h2::before {
+    content: "🐾 ";
+}
+
+
+/* ==================================================
+   WELCOME SECTION
+   ================================================== */
+
+main section:first-of-type {
+    background-color: #fff4c7;
+
+    border:
+        2px solid #ffe48a;
+
+    overflow: hidden;
+}
+
+
+/* Cute decoration */
+
+main section:first-of-type::before {
+    content: "🐶  🐱  🐰";
+
+    position: absolute;
+
+    right: 25px;
+
+    bottom: 15px;
+
+    font-size: 1.5rem;
+
+    opacity: 0.8;
+}
+
+main section:first-of-type h2 {
+    color: #8064a2;
+}
+
+main section:first-of-type p {
+    color: #756c78;
+
+    max-width: 650px;
+}
+
+
+/* ==================================================
+   STATISTIC CARDS
+   ================================================== */
+
+main section:nth-of-type(2) {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 1rem;
+}
+
+
+/* Judul */
+
+main section:nth-of-type(2) h2 {
+    grid-column: 1 / -1;
+}
+
+
+/* ===== Statistic Card ===== */
+
+main section:nth-of-type(2) article {
+    background-color: #fff4c7;
+
+    border-radius: 18px;
+
+    padding: 1.25rem;
+
+    text-align: center;
+
+    border:
+        2px solid #ffe48a;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Card Lilac */
+
+main section:nth-of-type(2) article:nth-of-type(2) {
+    background-color: #eee7fa;
+
+    border-color: #d9cbed;
+}
+
+
+/* Card Yellow */
+
+main section:nth-of-type(2) article:nth-of-type(3) {
+    background-color: #fff7d9;
+
+    border-color: #ffe8a1;
+}
+
+
+/* Hover */
+
+main section:nth-of-type(2) article:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 18px rgba(128, 100, 162, 0.14);
+}
+
+
+/* ===== Icons ===== */
+
+main section:nth-of-type(2) article:nth-of-type(1)::before {
+    content: "🐶";
+
+    display: block;
+
+    font-size: 2rem;
+
+    margin-bottom: 0.3rem;
+}
+
+main section:nth-of-type(2) article:nth-of-type(2)::before {
+    content: "🐱";
+
+    display: block;
+
+    font-size: 2rem;
+
+    margin-bottom: 0.3rem;
+}
+
+main section:nth-of-type(2) article:nth-of-type(3)::before {
+    content: "💜";
+
+    display: block;
+
+    font-size: 2rem;
+
+    margin-bottom: 0.3rem;
+}
+
+
+/* ===== Statistic Text ===== */
+
+main section:nth-of-type(2) article h3 {
+    font-size: 0.95rem;
+
+    color: #776d7e;
+
+    margin-bottom: 0.3rem;
+}
+
+main section:nth-of-type(2) article p {
+    font-size: 1.9rem;
+
+    font-weight: 700;
+
+    color: #8064a2;
+}
+
+
+/* ==================================================
+   SEARCH BOX
+   ================================================== */
+
+.search-box {
+    margin-bottom: 1.2rem;
+
+    background-color: #f5effc;
+
+    padding: 1rem;
+
+    border-radius: 16px;
+
+    border:
+        2px dashed #c8b6e8;
+}
+
+.search-box label {
+    display: block;
+
+    margin-bottom: 0.4rem;
+
+    font-weight: 600;
+
+    color: #6d5b7b;
+}
+
+.search-box label::before {
+    content: "🔎 ";
+}
+
+.search-box input {
+    width: 100%;
+
+    max-width: 360px;
+
+    padding: 0.65rem 0.85rem;
+
+    border:
+        2px solid #dacceb;
+
+    border-radius: 12px;
+
+    background-color: #fffef9;
+
+    font-size: 1rem;
+
+    color: #665d6b;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.search-box input::placeholder {
+    color: #b2a5bb;
+}
+
+.search-box input:focus {
+    border-color: #b49bd6;
+
+    box-shadow:
+        0 0 0 4px rgba(200, 182, 232, 0.22);
+}
+
+
+/* ==================================================
+   LOADING
+   ================================================== */
+
+#loading-indicator {
+    color: #8064a2;
+
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+
+    background-color: #f0eafa;
+
+    padding: 0.6rem 1rem;
+
+    border-radius: 12px;
+
+    display: inline-block;
+}
+
+#loading-indicator::before {
+    content: "🐾 ";
+}
+
+
+/* ==================================================
+   TABLE
+   ================================================== */
+
+.table-responsive {
+    overflow-x: auto;
+
+    border-radius: 16px;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    border:
+        2px solid #e4daf1;
+
+    border-radius: 14px;
+
+    background-color: #ffffff;
+}
+
+
+/* ===== Table Header ===== */
+
+thead {
+    background-color: #c8b6e8;
+
+    color: #514461;
+}
+
+th {
+    text-align: left;
+
+    padding: 0.8rem 0.75rem;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* ===== Table Body ===== */
+
+td {
+    text-align: left;
+
+    padding: 0.7rem 0.75rem;
+
+    border-bottom:
+        1px solid #eee8f4;
+}
+
+
+/* Zebra */
+
+tbody tr:nth-child(even) {
+    background-color: #fffbeb;
+}
+
+
+/* Hover */
+
+tbody tr:hover {
+    background-color: #f8f2ff;
+}
+
+
+/* ==================================================
+   TABLE BUTTON
+   ================================================== */
+
+td button {
+    padding: 0.4rem 0.75rem;
+
+    margin-right: 0.3rem;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+
+/* ===== EDIT ===== */
+
+td button:first-of-type {
+    background-color: #ffe08a;
+
+    color: #725b2a;
+}
+
+td button:first-of-type::before {
+    content: "✏️ ";
+}
+
+
+/* ===== HAPUS ===== */
+
+td button:last-of-type {
+    background-color: #c8b6e8;
+
+    color: #5d4c70;
+}
+
+td button:last-of-type::before {
+    content: "🐾 ";
+}
+
+
+/* Hover */
+
+td button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 3px 8px rgba(128, 100, 162, 0.18);
+}
+
+
+/* ==================================================
+   FORM
+   ================================================== */
+
+form p {
+    margin-bottom: 1rem;
+}
+
+
+/* ===== Label ===== */
+
+form label {
+    display: block;
+
+    margin-bottom: 0.35rem;
+
+    font-weight: 600;
+
+    color: #665d6b;
+}
+
+form label::before {
+    content: "🐾 ";
+
+    font-size: 0.85rem;
+}
+
+
+/* ===== Input & Select ===== */
+
+form input,
+form select {
+    width: 100%;
+
+    max-width: 400px;
+
+    padding: 0.65rem 0.8rem;
+
+    border:
+        2px solid #e2d8ed;
+
+    border-radius: 12px;
+
+    background-color: #fffefb;
+
+    font-size: 1rem;
+
+    color: #665d6b;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Focus */
+
+form input:focus,
+form select:focus {
+    border-color: #bca4dd;
+
+    box-shadow:
+        0 0 0 4px rgba(200, 182, 232, 0.20);
+}
+
+
+/* ==================================================
+   SUBMIT BUTTON
+   ================================================== */
+
+form button[type="submit"] {
+    background-color: #ffd95a;
+
+    color: #6e592b;
+
+    border: none;
+
+    padding: 0.7rem 1.5rem;
+
+    border-radius: 14px;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 8px rgba(222, 184, 70, 0.20);
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+form button[type="submit"]::before {
+    content: "🐾 ";
+}
+
+form button[type="submit"]:hover {
+    background-color: #f7cb3e;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   ERROR
+   ================================================== */
+
+.error {
+    display: block;
+
+    color: #b56b82;
+
+    font-size: 0.85rem;
+
+    margin-top: 0.3rem;
+
+    font-weight: 500;
+}
+
+.error::before {
+    content: "🐶 ";
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+footer {
+    text-align: center;
+
+    padding: 1.5rem;
+
+    color: #a092a7;
+
+    font-size: 0.9rem;
+}
+
+footer p::before {
+    content: "🐾 ";
+}
+
+footer p::after {
+    content: " 💜";
+}
+
+
+/* ==================================================
+   RESPONSIVE - TABLET
+   ================================================== */
+
+@media (max-width: 768px) {
+
+    main section:nth-of-type(2) {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==================================================
+   RESPONSIVE - MOBILE
+   ================================================== */
+
+@media (max-width: 480px) {
+
+    header {
+        position: relative;
+    }
+
+
+    /* Hamburger */
+
+    .nav-toggle-label {
+        display: block;
+    }
+
+
+    /* Navigation */
+
+    header nav {
+        display: none;
+
+        width: 100%;
+
+        order: 3;
+
+        margin-top: 1rem;
+    }
+
+    header nav.nav-open {
+        display: block;
+    }
+
+
+    header nav ul {
+        flex-direction: column;
+
+        gap: 0.5rem;
+
+        background-color: #c8b6e8;
+
+        padding: 0.8rem;
+
+        border-radius: 14px;
+    }
+
+
+    header nav a {
+        display: block;
+
+        padding: 0.5rem;
+
+        color: #5d4c70;
+
+        background-color:
+            rgba(255, 255, 255, 0.35);
+    }
+
+
+    /* Statistic */
+
+    main section:nth-of-type(2) {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Form */
+
+    form input,
+    form select {
+        max-width: 100%;
+    }
+
+
+    /* Section */
+
+    section {
+        padding: 1.2rem;
+
+        border-radius: 18px;
+    }
+
+
+    /* Table */
+
+    th,
+    td {
+        padding: 0.6rem;
+    }
+
+}
