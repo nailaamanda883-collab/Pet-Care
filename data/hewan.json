@@ -1,0 +1,72 @@
+[
+    {
+        "nama": "Milo",
+        "jenis": "Kucing",
+        "ras": "Persia",
+        "usia": 3,
+        "pemilik": "Siti Aminah"
+    },
+    {
+        "nama": "Bruno",
+        "jenis": "Anjing",
+        "ras": "Golden Retriever",
+        "usia": 4,
+        "pemilik": "Budi Santoso"
+    },
+    {
+        "nama": "Luna",
+        "jenis": "Kucing",
+        "ras": "Anggora",
+        "usia": 2,
+        "pemilik": "Dewi Lestari"
+    },
+    {
+        "nama": "Coco",
+        "jenis": "Kelinci",
+        "ras": "Holland Lop",
+        "usia": 1,
+        "pemilik": "Rizky Firmansyah"
+    },
+    {
+        "nama": "Max",
+        "jenis": "Anjing",
+        "ras": "Pomeranian",
+        "usia": 5,
+        "pemilik": "Siti Aminah"
+    },
+    {
+        "nama": "Oreo",
+        "jenis": "Kucing",
+        "ras": "British Shorthair",
+        "usia": 3,
+        "pemilik": "Budi Santoso"
+    },
+    {
+        "nama": "Mochi",
+        "jenis": "Hamster",
+        "ras": "Syrian",
+        "usia": 1,
+        "pemilik": "Dewi Lestari"
+    },
+    {
+        "nama": "Rocky",
+        "jenis": "Anjing",
+        "ras": "Beagle",
+        "usia": 2,
+        "pemilik": "Rizky Firmansyah"
+    },
+    {
+        "nama": "Nala",
+        "jenis": "Kucing",
+        "ras": "Maine Coon",
+        "usia": 4,
+        "pemilik": "Siti Aminah"
+    },
+    {
+        "nama": "Snowy",
+        "jenis": "Kelinci",
+        "ras": "Lionhead",
+        "usia": 2,
+        "pemilik": "Budi Santoso"
+    }
+]
